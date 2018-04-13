@@ -8,24 +8,16 @@
 #define FALSE	0
 
 typedef int	BOOL;
+typedef int	Data;
 
-typedef struct _TODO										// ±‚¥… ºˆ«‡¿ª ¿ß«— ±∏¡∂√º
-{
-	int start;
-	int period;
-	char * schedule;
-} TODO;
-
-typedef TODO Data;
-
-typedef struct _node										// ≥ÎµÂ ±∏¡∂√º
+typedef struct _node										// ÎÖ∏Îìú Íµ¨Ï°∞Ï≤¥
 {
 	Data data;
 	struct _node * next;
 	struct _node * prev;
 } Node;
 
-typedef struct _List										// ¿Ã¡ﬂ ø¨∞·∏ÆΩ∫∆Æ ±∏¡∂√º
+typedef struct _List										// Ïù¥Ï§ë Ïó∞Í≤∞Î¶¨Ïä§Ìä∏ Íµ¨Ï°∞Ï≤¥
 {
 	Node * head;
 	Node * cur;
