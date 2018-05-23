@@ -1,3 +1,4 @@
+//sort for array
 #include "array.h"
 
 void MergeSortArray(Base * arr, int left, int right)
